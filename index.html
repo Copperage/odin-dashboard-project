@@ -10,8 +10,9 @@
 	<body>
 		<div class="container">
 			<div class="header">
+				<div class="header-contents">
 				<div class="header-top">
-					<div class="searchbar">
+					<div class="searchbar-contents">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="-2.5 -2.5 24 24"
@@ -25,7 +26,7 @@
 								type="text"
 								name="searchbar"
 								id="searchbar"
-								placeholder="Search here..."
+
 							/>
 						</svg>
 					</div>
@@ -33,20 +34,24 @@
 						<img src="" alt="Account Display Picture" class="display-picture" />
 						<h3>Account Name</h3>
 					</div>
+					</div>
+					<div class="header-bottom">
                     <div class="welcome">
                         <img src="" alt="Account Display Picture" class="display-picture" />
-                        <h4>Welcome to your homepage!</h4>
+                        <div class="welcome-message">
+						<p>Welcome to your homepage!</p>
                         <h2>Account Name (@Account)</h2>
+						</div>
                     </div>
-					<ul>
+					<ul class="card-buttons">
 						<button class="new" disabled="disabled">New</button>
 						<button class="upload" disabled="disabled">Upload</button>
 						<button class="share" disabled="disabled">Share</button>
 					</ul>
 				</div>
-                
-			</div>
-			<div class="sidebar">
+				</div>
+				</div>
+				<div class="sidebar">
 				<div class="sidebar-contents">
 				<div class="logo spacer"><img src="/images/layout.svg">Dashboard</div>
 				<div class="home"><img src="/images/home.svg">Home</div>
