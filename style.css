@@ -51,25 +51,37 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	gap: 1rem;
 }
 
-.searchbar-contents > svg {
-	width: 1.25rem;
-	margin-right: 15px;
+.searchbar-contents > img {
+	font-size: 2rem;
+	vertical-align: middle;
 }
 
 #searchbar {
-	height: 25px;
+	height: 1rem;
 	width: 40vw;
-	border-radius: 10px;
+	border-radius: 25px;
 	border: none;
 	background-color: rgb(240, 240, 240);
+	padding: 0.4rem 1.25rem;
+}
+
+#searchbar:focus {
+	outline: none;
 }
 
 .account {
 	display: flex;
 	align-items: center;
 	gap: 1.5vw;
+}
+
+.notification-bell {
+	vertical-align: middle;
+	transform: scale(1.1);
+	font-size: 2rem;
 }
 
 .account > h3 {
@@ -87,10 +99,12 @@
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+	width: 40vw;
 }
 
 .welcome-message > p {
 	font-size: 0.9rem;
+	font-weight: 900;
 }
 
 .welcome-message > h2 {
@@ -130,6 +144,12 @@
 	color: white;
 	border: none;
 	font-weight: 900;
+	transition: ease-in-out 100ms;
+}
+
+.header-buttons button:hover {
+	background-color: rgb(0, 120, 240);
+	transition: ease-in-out 100ms;
 }
 
 /* Sidebar Contents */
@@ -148,6 +168,25 @@
 	flex-direction: column;
 	font-weight: 900;
 	color: white;
+}
+
+.hover {
+	transition: ease-in-out 100ms;
+	cursor: pointer;
+}
+
+.hover:hover {
+	transform: scale(1.05);
+	transition: ease-in-out 100ms;
+}
+
+.card-hover {
+	transition: ease-in-out 100ms;
+}
+
+.card-hover:hover {
+	transform: scale(1.1);
+	transition: ease-in-out 100ms;
 }
 
 .sidebar-contents div {
@@ -169,6 +208,7 @@
 .logo > img {
 	width: 2rem;
 	margin-right: 5px;
+	cursor: pointer;
 }
 
 .spacer {
@@ -181,7 +221,7 @@
 	display: grid;
 	grid-template: 'projects announcements' min-content 'projects trending' 1fr / 4fr 1fr;
 	overflow: auto;
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(240, 240, 240);
 	padding: 2rem;
 	gap: 2rem;
 }
@@ -230,10 +270,24 @@
 .card-buttons button > img {
 	width: 2rem;
 	vertical-align: middle;
+	filter: invert(35%);
 }
 
-.card-buttons button:hover {
-	transform: scale(1.1);
+.card-buttons button > img:hover {
+	filter: invert(20%);
+}
+
+.card-title {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.card-text {
+	color: rgb(75, 75, 75);
+}
+
+.projects .card > .card-text {
+	height: 8rem;
 }
 
 .card {
@@ -265,6 +319,14 @@ ul {
 
 .announcement-spacer {
 	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.announcement .card-title {
+	font-size: 1.1rem;
+}
+
+.announcement .card-text {
+	font-size: 0.9rem;
 }
 
 .trending-box {

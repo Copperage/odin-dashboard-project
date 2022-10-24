@@ -13,15 +13,7 @@
 				<div class="header-contents">
 				<div class="header-top">
 					<div class="searchbar-contents">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="-2.5 -2.5 24 24"
-							width="24"
-							fill="currentColor"
-						>
-							<path
-								d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"
-							></path></svg>
+						<img src="./images/search.svg" />
 							<input
 								type="text"
 								name="searchbar"
@@ -31,6 +23,9 @@
 						</svg>
 					</div>
 					<div class="account">
+						<div class="notification-bell">
+							<img src="./images/bell.svg" class="card-hover" />
+						</div>
 						<img src="" alt="Account Display Picture" class="display-picture" />
 						<h3>Account Name</h3>
 					</div>
@@ -53,16 +48,16 @@
 				</div>
 				<div class="sidebar">
 				<div class="sidebar-contents">
-				<div class="logo spacer"><img src="/images/layout.svg">Dashboard</div>
-				<div class="home"><img src="/images/home.svg">Home</div>
-				<div class="profile"><img src="/images/user.svg">Profile</div>
-				<div class="messages"><img src="/images/message.svg">Messages</div>
-				<div class="history"><img src="/images/clock.svg">History</div>
-				<div class="tasks"><img src="/images/paper-plane.svg">Tasks</div>
-				<div class="communities spacer"><img src="/images/users.svg">Community</div>
-				<div class="settings"><img src="/images/cog.svg">Settings</div>
-				<div class="support"><img src="/images/help.svg">Support</div>
-				<div class="privacy"><img src="/images/shield-check.svg">Privacy</div>
+				<div class="logo spacer"><img src="/images/layout.svg" />Dashboard</div>
+				<div class="home hover"><img src="/images/home.svg" />Home</div>
+				<div class="profile hover"><img src="/images/user.svg" />Profile</div>
+				<div class="messages hover"><img src="/images/message.svg" />Messages</div>
+				<div class="history hover"><img src="/images/clock.svg" />History</div>
+				<div class="tasks hover"><img src="/images/paper-plane.svg" />Tasks</div>
+				<div class="communities spacer hover"><img src="/images/users.svg" />Community</div>
+				<div class="settings hover"><img src="/images/cog.svg" />Settings</div>
+				<div class="support hover"><img src="/images/help.svg" />Support</div>
+				<div class="privacy hover"><img src="/images/shield-check.svg" />Privacy</div>
 				</div>
 			</div>
 			<div class="main">
@@ -73,9 +68,54 @@
 						<h6 class="card-title">Lorem Project</h6>
 						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, beatae.</p>
 						<div class="card-buttons">
-							<button disabled="disabled"><img src="/images/star.svg"></button>
-							<button disabled="disabled"><img src="/images/eye.svg"></button>
-							<button disabled="disabled"><img src="/images/branch.svg"></button>
+							<button disabled="disabled"><img src="/images/star.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/eye.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/branch.svg" class="card-hover" /></button>
+						</div>
+					</div>
+					<div class="card">
+						<h6 class="card-title">Lorem Project</h6>
+						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, beatae.</p>
+						<div class="card-buttons">
+							<button disabled="disabled"><img src="/images/star.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/eye.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/branch.svg" class="card-hover" /></button>
+						</div>
+					</div>
+					<div class="card">
+						<h6 class="card-title">Lorem Project</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fuga mollitia beatae accusantium totam eius rerum hic obcaecati tempore nesciunt.</p>
+						<div class="card-buttons">
+							<button disabled="disabled"><img src="/images/star.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/eye.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/branch.svg" class="card-hover" /></button>
+						</div>
+					</div>
+					<div class="card">
+						<h6 class="card-title">Lorem Project</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deserunt maiores deleniti harum totam quia non iure, exercitationem earum at!</p>
+						<div class="card-buttons">
+							<button disabled="disabled"><img src="/images/star.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/eye.svg" class="card-hover" /></button>
+							<button disabled="disabled"><img src="/images/branch.svg" class="card-hover" /></button>
+						</div>
+					</div>
+					<div class="card">
+						<h6 class="card-title">Lorem Project</h6>
+						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, beatae.</p>
+						<div class="card-buttons">
+							<button disabled="disabled"><img src="/images/star.svg" /></button>
+							<button disabled="disabled"><img src="/images/eye.svg" /></button>
+							<button disabled="disabled"><img src="/images/branch.svg" /></button>
+						</div>
+					</div>
+					<div class="card">
+						<h6 class="card-title">Lorem Project</h6>
+						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, beatae.</p>
+						<div class="card-buttons">
+							<button disabled="disabled"><img src="/images/star.svg" /></button>
+							<button disabled="disabled"><img src="/images/eye.svg" /></button>
+							<button disabled="disabled"><img src="/images/branch.svg" /></button>
 						</div>
 					</div>
 				</div>
@@ -103,17 +143,24 @@
 					<h3>Trending</h3>
 					<ul class="trending-box card">
 						<li class="trending-account">
-							<img src="" alt="Account Display Picture" class="display-picture">
+							<img src="" alt="Account Display Picture" class="display-picture" />
 							<div class="account-inner">
 							<p class="username">@account</p>
 							<p class="account-text">Lorem, ipsum.</p>
 							</div>
 						</li>
 						<li class="trending-account">
-							<img src="" alt="Account Display Picture" class="display-picture">
+							<img src="" alt="Account Display Picture" class="display-picture" />
 							<div class="account-inner">
 							<p class="username">@account</p>
 							<p class="account-text">Lorem ipsum dolor sit. </p>
+							</div>
+						</li>
+						<li class="trending-account">
+							<img src="" alt="Account Display Picture" class="display-picture" />
+							<div class="account-inner">
+							<p class="username">@account</p>
+							<p class="account-text">Lorem, ipsum.</p>
 							</div>
 						</li>
 						<li class="trending-account">
